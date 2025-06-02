@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclination for Ministry Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inclination for Ministry Assessment</h1>
+        <p>Using the numbers 1, 2, 3, and 4 – RANK the following statements by what best describes you. <strong>1</strong> representing what least describes you and <strong>4</strong> being what most describes you. Place numbers by rank in the box, USING EACH NUMBER ONLY ONCE PER QUESTION.</p>
+
+        <form id="assessment-form">
+            <div id="questionnaire-container">
+                <!-- Questions will be dynamically inserted here by JavaScript -->
+            </div>
+
+            <button type="button" id="calculate-button">Calculate Totals</button>
+        </form>
+
+        <div id="results-container" class="results-hidden">
+            <h2>Results:</h2>
+            <p>Total for A: <span id="total-a"></span></p>
+            <p>Total for B: <span id="total-b"></span></p>
+            <p>Total for C: <span id="total-c"></span></p>
+            <p>Total for D: <span id="total-d"></span></p>
+        </div>
+
+        <div id="error-message" class="error-hidden">
+            <!-- Error messages will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <img id="role-logo" src="Downloads/role.png" alt="R.O.L.E. Class Logo">
+    <img id="mpc-logo" src="Downloads/mountain_park.png" alt="Mountain Park Church Logo">
+</body>
+</html>
+

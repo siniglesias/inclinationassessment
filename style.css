@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 80px 20px 80px; /* Adjusted padding: top, horizontal, bottom for fixed logos */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Logo Styles */
+#role-logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    max-width: 180px; /* Adjust as needed */
+    height: auto;
+    z-index: 1000; /* Ensure it stays on top */
+    /* background-color: #f4f4f4; Optional: if logo has transparency */
+    /* padding: 5px; */
+    /* border-radius: 4px; */
+}
+
+#mpc-logo {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    max-width: 120px; /* Adjust as needed */
+    height: auto;
+    z-index: 1000; /* Ensure it stays on top */
+    background-color: #f4f4f4; /* Optional: if logo has transparency and needs a background */
+    padding: 5px; /* Optional: add some padding around the logo */
+    border-radius: 4px; /* Optional: if padding/background is added */
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.question-block {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.question-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option-label {
+    flex-basis: 5%; /* For A, B, C, D */
+    font-weight: bold;
+}
+
+.option-text {
+    flex-basis: 75%;
+    margin-left: 10px;
+}
+
+.option-input {
+    flex-basis: 15%;
+    margin-left: 10px;
+}
+
+.option-input input[type="number"] {
+    width: 50px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Hide HTML5 number input arrows */
+.option-input input[type=number]::-webkit-inner-spin-button,
+.option-input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.option-input input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e9f7ef;
+}
+
+.results-hidden {
+    display: none;
+}
+
+#results-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#results-container p {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+#error-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error-hidden {
+    display: none;
+}
+
